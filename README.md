@@ -14,3 +14,7 @@ See more at [mailx documentation](https://pubs.opengroup.org/onlinepubs/00790879
 ```
 docker run -it dockette/mailx mailx [...args]
 ```
+
+## Maintenance
+
+See [how to contribute](https://github.com/dockette/.github/blob/master/CONTRIBUTING.md) to this package.
