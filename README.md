@@ -1,11 +1,15 @@
-# Mail(x)
+<h1 align=center>Dockette / Mailx</h1>
+
+<p align=center>
+   <a href="https://github.com/dockette/mailx/actions"><img src="https://github.com/dockette/mailx/actions/workflows/docker.yml/badge.svg" alt="GitHub Actions"></a>
+   <a href="https://hub.docker.com/r/dockette/mailx"><img src="https://img.shields.io/docker/pulls/dockette/mailx.svg" alt="Docker Hub pulls"></a>
+   <a href="https://github.com/sponsors/f3l1x"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa" alt="GitHub Sponsors"></a>
+   <a href="https://github.com/orgs/dockette/discussions"><img src="https://img.shields.io/badge/support-discussions-6f42c1" alt="Support/Discussions"></a>
+</p>
 
 Alpine Linux with preinstalled mail utils.
 
 -----
-
-[![Docker Stars](https://img.shields.io/docker/stars/dockette/mailx.svg?style=flat)](https://hub.docker.com/r/dockette/mailx/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/dockette/mailx.svg?style=flat)](https://hub.docker.com/r/dockette/mailx/)
 
 ## Usage
 
@@ -13,6 +17,14 @@ See more at [mailx documentation](https://pubs.opengroup.org/onlinepubs/00790879
 
 ```
 docker run -it dockette/mailx mailx [...args]
+```
+
+## Development
+
+```bash
+make build
+make test
+make run
 ```
 
 ## Maintenance
