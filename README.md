@@ -19,12 +19,19 @@ See more at [mailx documentation](https://pubs.opengroup.org/onlinepubs/00790879
 docker run -it dockette/mailx mailx [...args]
 ```
 
+## Versions
+
+The release version is the date in [`VERSION`](VERSION). CI pushes `latest` also as `dockette/mailx:<VERSION>`.
+To release, run `make release`, commit and push to `master`.
+
 ## Development
 
 ```bash
 make build
 make test
 make run
+make version
+make release
 ```
 
 ## Maintenance
