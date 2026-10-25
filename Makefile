@@ -1,6 +1,7 @@
 DOCKER_IMAGE=dockette/mailx
 DOCKER_TAG?=latest
 DOCKER_PLATFORMS?=linux/amd64,linux/arm64
+include VERSION
 
 .PHONY: build test run
 
@@ -13,3 +14,12 @@ test:
 
 run:
 	docker run --rm -it ${DOCKER_IMAGE}:${DOCKER_TAG}
+
+.PHONY: version
+version:
+	@echo ${VERSION}
+
+.PHONY: release
+release:
+	@sed -i.bak "s/^VERSION=.*/VERSION=$$(date -u +%Y.%m.%d)/" VERSION && rm VERSION.bak
+	@cat VERSION
